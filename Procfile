@@ -1,1 +1,2 @@
-echobot: python echobot.py
+web: gunicorn run-heroku:app
+worker: python coffeebot.py
