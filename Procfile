@@ -1,1 +1,1 @@
-echobot: python3 echobot.py
+echobot: python echobot.py
