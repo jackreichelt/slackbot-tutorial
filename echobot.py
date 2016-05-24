@@ -1,7 +1,8 @@
 from time import sleep
 from slackclient import SlackClient
+import os
 
-token = app.config['TOKEN'] # found at https://api.slack.com/web#authentication
+token = os.environ.get('TOKEN', None) # found at https://api.slack.com/web#authentication
 sc = SlackClient(token)
 if sc.rtm_connect() == True:
   print('Connected.')
